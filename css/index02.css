@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    color: #333;
+    line-height: 1;
+    font-size: 14px;
+}
+
+.login {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.login_wrap{
+    width: 800px;
+    height: 600px;
+    padding: 40px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.login_wrap > h2 img {
+    position: absolute;
+    top: 40px;
+    left: 330px;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+
+.login_wrap > h2{
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#login-form > input{
+    width: 100%;
+    height: 48px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    background-color: #f6f6f6;
+}
+#login-form > input::placeholder{
+    color: #333;
+}
+#login-form > input[type="submit"] {
+    color: #fff;
+    font-size: 16px;
+    background-color: #c01010;
+    margin-top: 20px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+
+#login-form > input[type="checkbox"]{
+    display: none;
+}
+#login-form > label{
+    color: #666666;
+}
+#login-form input[type="checkbox"] + label{
+    cursor: pointer;
+    padding-left: 26px;
+    background-image: url("checkbox.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#login-form input[type="checkbox"]:checked + label{
+    background-image: url("checkbox-active.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
